@@ -4,6 +4,7 @@
 		<Folder name="WebHookTester">
 			<Content fileName="Show.js"/>
 			<Content fileName="Show.md"/>
+			<Content fileName="Show.ws"/>
 		</Folder>
 	</Folder>
 </Module>

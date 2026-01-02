@@ -14,6 +14,12 @@ Web Hook Tester
 
 
 {{
+if exists(Posted) then
+(
+	Return("Data received.");
+);
+
+
 if empty(ID) then ]]
 
 This page can display incoming posts made to it. It can also optionally process script on the
@@ -37,7 +43,24 @@ This page displays incoming posts made to the page. It can optionally process sc
 incoming data, for testing purposes. Send a POST request to the following URL:
 
 ```
-((Waher.IoTGateway.Gateway.GetUrl("/WebHookTester/Show.md?ID="+UrlEncode(ID) ) ))
+((Waher.IoTGateway.Gateway.GetUrl("/WebHookTester/Show.ws?ID="+UrlEncode(ID) ) ))
+```
+
+If you are using [script](/Script.md) in the [script prompt](/Prompt.md) (requires elevated
+privileges), you can use the following script to send a simple post message:
+
+```
+Url:="((Waher.IoTGateway.Gateway.GetUrl("/WebHookTester/Show.ws?ID="+UrlEncode(ID) ) ))";
+Data:=
+{
+	"Message": "Hello World!",
+	"Timestamp": NowUtc
+};
+Headers:=
+{
+	"Accept": "application/json"
+};
+Post(Url,Data,Headers);
 ```
 
 [[
