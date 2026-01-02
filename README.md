@@ -1,4 +1,4 @@
-Content Service Package
+WebHook Tester
 ==========================
 
 This repository provides a template solution. Developers who want to create a custom content-only package for the TAG Neuron(R) can use this 
@@ -52,7 +52,7 @@ Installable Package
 ----------------------
 
 To create a package, that can be distributed or installed, you begin by creating a *manifest file*. The repository has a manifest file
-called `ContentServiceTemplate.manifest`. It defines the content files and folders included in the package. You then use the 
+called `WebHookTester.manifest`. It defines the content files and folders included in the package. You then use the 
 `Waher.Utility.Install` and `Waher.Utility.Sign` command-line tools in the [IoT Gateway](https://github.com/PeterWaher/IoTGateway) repository, 
 to create a package file and cryptographically sign it for secure distribution across the Neuron network. These tools are also available in 
 the installation folder of the Neuron(R) distribution.
@@ -93,14 +93,14 @@ TAG Neuron(R) to do this.
 
 ```
 IoTGateway\Utilities\Waher.Utility.Install\bin\Release\PublishOutput\win-x86\Waher.Utility.Install.exe
-	-p TAG.ContentServiceTemplate.package -k [AESKEY]
-	-m TemplateContentOnlyPackage\ContentServiceTemplate.manifest
+	-p TAG.WebHookTester.package -k [AESKEY]
+	-m TemplateContentOnlyPackage\WebHookTester.manifest
 
 IoTGateway\Utilities\Waher.Utility.Sign\bin\Release\PublishOutput\win-x86\Waher.Utility.Sign.exe 
 	-c ed448 
 	-priv [PRIVKEY]
-	-o TAG.ContentServiceTemplate.signature
-	-s TAG.ContentServiceTemplate.package
+	-o TAG.WebHookTester.signature
+	-s TAG.WebHookTester.package
 ```
 
 **Note**: The command line example above are only two commands, shown on multiple rows, for readability.
@@ -127,7 +127,7 @@ Example of how to point a web folder to your project folder:
 
 ```
 <FileFolders>
-  <FileFolder webFolder="/TemplateContent" folderPath="C:\My Projects\TemplateContentOnlyPackage\Root\TemplateContent"/>
+  <FileFolder webFolder="/WebHookTester" folderPath="C:\My Projects\WebHookTester\Root\WebHookTester" />
 </FileFolders>
 ```
 

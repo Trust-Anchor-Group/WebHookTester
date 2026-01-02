@@ -6,24 +6,16 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A783EC6-A5EA-4457-8447-CC55E045DD11}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		ContentServiceTemplate.manifest = ContentServiceTemplate.manifest
 		README.md = README.md
+		WebHookTester.manifest = WebHookTester.manifest
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{B864C64F-AB7C-49C3-A403-DDE2D96D6ED3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateContent", "TemplateContent", "{FE17EE9B-9567-430E-8317-6B411D781F78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebHookTester", "WebHookTester", "{FE17EE9B-9567-430E-8317-6B411D781F78}"
 	ProjectSection(SolutionItems) = preProject
-		Root\TemplateContent\ContentAdmin.md = Root\TemplateContent\ContentAdmin.md
-		Root\TemplateContent\ContentAnonymous.md = Root\TemplateContent\ContentAnonymous.md
-		Root\TemplateContent\ContentNeuroAccess.md = Root\TemplateContent\ContentNeuroAccess.md
-		Root\TemplateContent\Index.md = Root\TemplateContent\Index.md
-		Root\TemplateContent\Invitation.md = Root\TemplateContent\Invitation.md
-		Root\TemplateContent\Login.js = Root\TemplateContent\Login.js
-		Root\TemplateContent\Login.md = Root\TemplateContent\Login.md
-		Root\TemplateContent\LogOut.md = Root\TemplateContent\LogOut.md
-		Root\TemplateContent\Master.md = Root\TemplateContent\Master.md
-		Root\TemplateContent\TemplateStyles.cssx = Root\TemplateContent\TemplateStyles.cssx
+		Root\WebHookTester\Show.js = Root\WebHookTester\Show.js
+		Root\WebHookTester\Show.md = Root\WebHookTester\Show.md
 	EndProjectSection
 EndProject
 Global
