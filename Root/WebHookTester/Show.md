@@ -22,9 +22,8 @@ if exists(Posted) then
 
 if empty(ID) then ]]
 
-This page can display incoming posts made to it. It can also optionally process script on the
-incoming data, for testing purposes. To start, enter an ID below, or create a random ID by
-pressing the randomize button, and press the Start button.
+This page can display incoming posts made to it. To start, enter an ID below, or create a 
+random ID by pressing the randomize button, and press the Start button.
 
 <form>
 <p>
@@ -39,8 +38,7 @@ pressing the randomize button, and press the Start button.
 else
 ]]
 
-This page displays incoming posts made to the page. It can optionally process script on the
-incoming data, for testing purposes. Send a POST request to the following URL:
+This page displays incoming posts made to the page. Send a POST request to the following URL:
 
 ```
 ((Waher.IoTGateway.Gateway.GetUrl("/WebHookTester/Show.ws?ID="+UrlEncode(ID) ) ))
@@ -49,6 +47,8 @@ incoming data, for testing purposes. Send a POST request to the following URL:
 If you are using [script](/Script.md) in the [script prompt](/Prompt.md) (requires elevated
 privileges), you can use the following script to send a simple post message:
 
+<div id="ScriptExample">
+
 ```
 Url:="((Waher.IoTGateway.Gateway.GetUrl("/WebHookTester/Show.ws?ID="+UrlEncode(ID) ) ))";
 Data:=
@@ -56,12 +56,11 @@ Data:=
 	"Message": "Hello World!",
 	"Timestamp": NowUtc
 };
-Headers:=
-{
-	"Accept": "application/json"
-};
-Post(Url,Data,Headers);
+Post(Url,Data);
 ```
+
+</div>
+<button type="button" onclick="OpenExampleScript()">Open in Prompt</button>
 
 [[
 }}
