@@ -17,6 +17,13 @@ TAG Neuron network, you can install the package using the following information:
 | Installation key | `Mb9pim8FTjHBnju2f2ZVNHBRbOG3VHhM7iBn26mgcvc/uwjouWjHEF0OmcC/noKEuZAOWZY6Ka4A4abb4fc2a2596e04f047400e3218dcd2` |
 | More Information |                                                                                                                |
 
+Installing the package via the administrative console (*Chat Admin*), can be done using the
+following command:
+
+```
+install nobackup TAG.WebHookTester.package Mb9pim8FTjHBnju2f2ZVNHBRbOG3VHhM7iBn26mgcvc/uwjouWjHEF0OmcC/noKEuZAOWZY6Ka4A4abb4fc2a2596e04f047400e3218dcd2
+```
+
 ## Development
 
 The WebHookTester service runs on any [IoT Gateway Host](https://github.com/PeterWaher/IoTGateway). This includes the
