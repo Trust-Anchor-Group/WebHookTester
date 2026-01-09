@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
+	<Content fileName="WebHookTester.config"/>
 	<Folder name="Root">
-		<Content fileName="WebHookTester.config"/>
 		<Folder name="WebHookTester">
 			<Content fileName="Show.js"/>
 			<Content fileName="Show.md"/>
